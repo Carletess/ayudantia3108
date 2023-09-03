@@ -16,7 +16,7 @@ public class Main {
         mostrarMatriz(matriz);
         mostrarMatriz(trasponerMatriz(matriz));
 
-        System.out.println(metodo5(palindromo));
+        System.out.println(esTexto("reconocer 3"));
    }
 
 
@@ -78,7 +78,7 @@ public class Main {
         return t;
     }
 
-    public static boolean metodo5(String palabraIngresada) {
+    public static boolean esTexto(String palabraIngresada) {
         for (int i = 0; i < palabraIngresada.length(); i++) {
             if (Character.isDigit(palabraIngresada.charAt(i)) || palabraIngresada.isBlank()) {
                 return false;
